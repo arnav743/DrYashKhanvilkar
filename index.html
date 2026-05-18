@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dr. Yash Khanvilkar | Consultant Physician, Diabetologist & Thyroid Specialist | Baner, Pune</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --emerald-institutional: #022c22; /* Deep Imperial Emerald representing cellular health & vitality */
+    --gold-prestige: #c29d58;         /* Premium Accent for Clinical Authority */
+    --mint-subtle: #f0f7f4;           /* Crisp, clean room diagnostic canvas background */
+    --slate-ink: #0f172a;             /* High contrast clinical reading text */
+    --slate-muted: #475569;           /* Secondary support label text */
+    --card-pure: #ffffff;             /* Isolated sterile surface elements */
+    --gold-glow: rgba(194, 157, 88, 0.15);
+  }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fafbfc; color: var(--slate-ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+  /* PRESTIGE INTEGRATED NAVIGATION TERMINAL */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(2, 44, 34, 0.98); backdrop-filter: blur(20px);
+    padding: 1.3rem 6%; display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 2px solid var(--gold-prestige);
+  }
+  .logo { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; }
+  .logo span { color: var(--gold-prestige); font-weight: 400; }
+  .nav-links { display: flex; gap: 3rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: rgba(255,255,255,0.8); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; transition: color 0.3s; }
+  .nav-links a:hover { color: var(--gold-prestige); }
+  .btn-nav-call { background: var(--gold-prestige); color: var(--emerald-institutional); padding: 0.75rem 1.6rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: 700; transition: all 0.3s ease; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+  .btn-nav-call:hover { background: #ffffff; color: var(--emerald-institutional); transform: translateY(-1px); }
+
+  /* HERO ARENA STAGE */
+  .hero {
+    min-height: 100vh; padding: 13rem 6% 7rem;
+    background: radial-gradient(circle at top right, rgba(194, 157, 88, 0.07), transparent), 
+                linear-gradient(135deg, #ffffff 0%, var(--mint-subtle) 100%);
+    display: flex; align-items: center; position: relative; overflow: hidden;
+  }
+  .hero-grid { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 6rem; align-items: center; }
+  
+  .hero-badge { display: inline-flex; align-items: center; gap: 0.7rem; background: #ffffff; border: 1px solid rgba(194,157,88,0.25); padding: 0.6rem 1.4rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--emerald-institutional); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2.5rem; font-family: 'Outfit', sans-serif; box-shadow: 0 4px 25px rgba(2,44,34,0.03); }
+  .pulse-indicator { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: metabolicPulse 2s infinite; }
+  @keyframes metabolicPulse { 0% { transform: scale(0.95); opacity: 1; } 50% { transform: scale(1.3); opacity: 0.4; } 100% { transform: scale(0.95); opacity: 1; } }
+
+  .hero h1 { font-family: 'Outfit', sans-serif; font-size: clamp(3.2rem, 6vw, 4.6rem); line-height: 1.1; color: var(--emerald-institutional); margin-bottom: 2rem; font-weight: 800; letter-spacing: -1.5px; }
+  .hero h1 span { color: var(--gold-prestige); font-weight: 500; }
+  .hero-desc { font-size: 1.2rem; color: var(--slate-muted); margin-bottom: 3.5rem; max-width: 620px; font-weight: 400; }
+
+  /* MEDICAL PARAMETER CARD INTERFACE */
+  .profile-spec-card {
+    background: var(--card-pure); padding: 4rem 3.5rem; border-radius: 12px;
+    box-shadow: 0 35px 80px rgba(2, 44, 34, 0.06); border: 1px solid rgba(194, 157, 88, 0.15);
+    position: relative; transition: all 0.4s ease;
+  }
+  .profile-spec-card:hover { transform: translateY(-6px); box-shadow: 0 45px 95px rgba(194, 157, 88, 0.18); border-color: var(--gold-prestige); }
+  
+  .avatar-crest { width: 85px; height: 85px; background: var(--emerald-institutional); color: var(--gold-prestige); border-radius: 50%; margin: 0 auto 1.8rem; display: flex; align-items: center; justify-content: center; font-size: 2.1rem; font-family: 'Outfit', sans-serif; font-weight: 700; border: 2px solid var(--gold-prestige); }
+  .cert-tag { background: var(--mint-subtle); color: var(--emerald-institutional); font-size: 0.75rem; padding: 0.5rem 1rem; font-weight: 700; margin: 0.25rem; display: inline-block; border-radius: 4px; border: 1px solid rgba(2,44,34,0.05); text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Outfit', sans-serif; }
+
+  /* DISSERTATION / PHILOSOPHY BLOCK */
+  .section { padding: 10rem 6%; max-width: 1300px; margin: 0 auto; }
+  .about-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 7rem; align-items: center; }
+  .about-graphic-quote { background: var(--emerald-institutional); color: #ffffff; padding: 5rem 4.5rem; border-radius: 16px; position: relative; border-right: 6px solid var(--gold-prestige); box-shadow: 0 25px 60px rgba(2,44,34,0.12); }
+  .about-graphic-quote h3 { font-family: 'Outfit', sans-serif; font-size: 2.3rem; color: var(--gold-prestige); margin-bottom: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+  .about-text h2 { font-family: 'Outfit', sans-serif; font-size: 3.2rem; color: var(--emerald-institutional); margin-bottom: 2.5rem; line-height: 1.15; font-weight: 800; letter-spacing: -1px; }
+  .about-text p { color: var(--slate-muted); margin-bottom: 1.8rem; font-size: 1.1rem; }
+
+  /* CORE EXPERTISE MATRICES */
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 7rem; }
+  .section-header span { color: var(--gold-prestige); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 4px; display: block; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif; }
+  .section-header h2 { font-family: 'Outfit', sans-serif; font-size: 3.4rem; color: var(--emerald-institutional); font-weight: 800; letter-spacing: -1px; }
+  
+  .services-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 3.5rem; }
+  .specialty-focus-card { background: var(--card-pure); padding: 4.5rem 3.5rem; border-radius: 12px; border: 1px solid rgba(2, 44, 34, 0.04); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); position: relative; overflow: hidden; box-shadow: 0 10px 35px rgba(2,44,34,0.01); }
+  .specialty-focus-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: rgba(2, 44, 34, 0.04); transition: 0.3s; }
+  .specialty-focus-card:hover { transform: translateY(-5px); box-shadow: 0 30px 60px rgba(194, 157, 88, 0.08); border-color: rgba(194, 157, 88, 0.25); }
+  .specialty-focus-card:hover::before { background: linear-gradient(90deg, var(--emerald-institutional), var(--gold-prestige)); }
+  .specialty-icon { font-size: 2.6rem; margin-bottom: 2rem; display: block; }
+  .specialty-focus-card h3 { font-family: 'Outfit', sans-serif; font-size: 1.75rem; color: var(--emerald-institutional); margin-bottom: 1.2rem; font-weight: 700; letter-spacing: -0.5px; }
+  .specialty-focus-card p { color: var(--slate-muted); font-size: 1.05rem; }
+
+  /* CLINICAL SUCCESS DATA MODULES */
+  .reviews-wrapper { background: #f4f7f5; border-top: 1px solid rgba(194,157,88,0.1); border-bottom: 1px solid rgba(194,157,88,0.1); }
+  .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 3rem; }
+  .review-item-node { background: var(--card-pure); padding: 4rem; border-radius: 12px; border: 1px solid rgba(2, 44, 34, 0.03); box-shadow: 0 15px 40px rgba(0,0,0,0.01); }
+  .star-row { color: var(--gold-prestige); font-size: 1.1rem; margin-bottom: 1.4rem; }
+  .review-quote { font-size: 1.15rem; color: var(--emerald-institutional); margin-bottom: 2rem; line-height: 1.65; font-weight: 500; }
+
+  /* DIRECT PRIORITY ACCESS INTERFACE */
+  .appointment-block { background: var(--emerald-institutional); color: #ffffff; padding: 6rem; border-radius: 20px; display: grid; grid-template-columns: 1fr 1.15fr; gap: 7rem; box-shadow: 0 40px 90px rgba(2,44,34,0.25); }
+  .appointment-left h2 { font-family: 'Outfit', sans-serif; font-size: 3.6rem; line-height: 1.1; margin-bottom: 2rem; font-weight: 800; letter-spacing: -1px; }
+  .appointment-left h2 span { color: var(--gold-prestige); }
+  .direct-hotline-badge { background: rgba(255, 255, 255, 0.03); border-left: 4px solid var(--gold-prestige); padding: 2.2rem; border-radius: 6px; margin-top: 4.5rem; }
+  
+  .booking-portal-form { background: var(--card-pure); padding: 4.5rem 4rem; border-radius: 12px; display: grid; gap: 1.5rem; color: var(--emerald-institutional); box-shadow: 0 25px 60px rgba(0,0,0,0.04); }
+  .form-row-twin { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .booking-portal-form label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--slate-muted); margin-bottom: 0.4rem; display: block; font-family: 'Outfit', sans-serif; }
+  .booking-portal-form input, .booking-portal-form select { width: 100%; padding: 1.1rem; border: 1px solid #e2e8f0; font-family: inherit; font-size: 1rem; background: #fcfdfc; transition: all 0.3s; border-radius: 6px; }
+  .booking-portal-form input:focus, .booking-portal-form select:focus { outline: none; border-color: var(--gold-prestige); background: #ffffff; box-shadow: 0 0 0 4px var(--gold-glow); }
+  .btn-portal-submit { background: var(--emerald-institutional); color: #ffffff; border: none; padding: 1.25rem; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: all 0.3s; border-radius: 6px; font-family: 'Outfit', sans-serif; border: 1px solid transparent; }
+  .btn-portal-submit:hover { background: var(--gold-prestige); color: var(--emerald-institutional); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(194,157,88,0.2); }
+
+  /* ANCHOR INSTITUTIONAL FOOTER SYSTEM */
+  footer { background: #011410; color: #ffffff; padding: 8rem 6% 4rem; border-top: 3px solid var(--gold-prestige); }
+  .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 6rem; max-width: 1300px; margin: 0 auto; }
+  .footer-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; color: var(--gold-prestige); margin-bottom: 2rem; letter-spacing: 0.5px; font-weight: 700; }
+  .footer-links { list-style: none; display: grid; gap: 1.1rem; }
+  .footer-links a { color: #94a3b8; text-decoration: none; font-size: 0.95rem; transition: all 0.3s ease; font-weight: 500; }
+  .footer-links a:hover { color: #ffffff; padding-left: 6px; }
+
+  @media (max-width: 1024px) {
+    .hero-grid, .about-layout, .appointment-block, .footer-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .appointment-block { padding: 4rem 2.5rem; gap: 4rem; border-radius: 0; }
+    .booking-portal-form { padding: 3rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">DR. YASH <span>KHANVILKAR</span></div>
+  <ul class="nav-links">
+    <li><a href="#philosophy">Practice Paradigm</a></li>
+    <li><a href="#specialties">Specialties</a></li>
+    <li><a href="#validation">Clinical Validation</a></li>
+    <li><a href="#booking">Patient Portal</a></li>
+  </ul>
+  <a href="tel:07588358076" class="btn-nav-call">Call: 075883 58076</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-badge"><span class="pulse-indicator"></span> Premium Metabolic & Endocrine Care Node</div>
+      <h1>Evidence-Led <span>Metabolic Stability.</span> Absolute Internal Medicine.</h1>
+      <p class="hero-desc">Deploying advanced therapeutic diagnostics for diabetes containment, precise thyroid hormone optimization, and complete internal pathology management in Baner, Pune.</p>
+      <div style="display: flex; gap: 4.5rem;">
+        <div><h2 style="color: var(--emerald-institutional); font-family: 'Outfit', sans-serif; font-size: 3.4rem; line-height: 1; font-weight: 800; letter-spacing: -1px;">Baner</h2><p style="font-size: 0.75rem; font-weight: 800; color: var(--slate-muted); text-transform: uppercase; margin-top: 0.5rem; letter-spacing: 1.5px;">Elite Location Grid</p></div>
+        <div><h2 style="color: var(--emerald-institutional); font-family: 'Outfit', sans-serif; font-size: 3.4rem; line-height: 1; font-weight: 800; letter-spacing: -1px;">MD Care</h2><p style="font-size: 0.75rem; font-weight: 800; color: var(--slate-muted); text-transform: uppercase; margin-top: 0.5rem; letter-spacing: 1.5px;">Advanced Medicine</p></div>
+      </div>
+    </div>
+
+    <div class="profile-spec-card">
+      <div style="text-align: center;">
+        <div class="avatar-crest">YK</div>
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: var(--emerald-institutional); margin-bottom: 0.5rem; font-weight: 800; letter-spacing: -0.5px;">Dr. Yash Khanvilkar</h2>
+        <p style="color: var(--gold-prestige); font-weight: 700; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2rem;">Consultant Physician & Specialist</p>
+        <div class="cert-tag">MBBS, MD (Medicine)</div>
+        <div class="cert-tag">Expert Diabetologist</div>
+        <div class="cert-tag">Thyroid Specialist</div>
+        <div style="background: var(--mint-subtle); border-left: 3px solid var(--gold-prestige); margin-top: 2.8rem; padding: 1.5rem; text-align: left; border-radius: 4px;">
+          <p style="font-size: 0.65rem; font-weight: 800; color: var(--emerald-institutional); letter-spacing: 1.5px; text-transform: uppercase; font-family: 'Outfit', sans-serif;">Direct Contact Link</p>
+          <p style="font-size: 1.15rem; font-weight: 700; color: var(--emerald-institutional); margin-top: 0.3rem; font-family: 'Outfit', sans-serif;">075883 58076</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="philosophy">
+  <div class="about-layout">
+    <div class="about-graphic-quote">
+      <span>Clinical Mandate</span>
+      <h3>"Isolating endocrine irregularities protects cardiovascular life spans."</h3>
+      <p style="opacity: 0.85; font-size: 1rem; margin-top: 1.4rem; font-weight: 300; color: rgba(255,255,255,0.9);">Targeting specific underlying glucose metrics helps prevent major structural system damage long before chronic symptoms progress.</p>
+    </div>
+    <div class="about-text">
+      <h2>Advanced Internal Medicine Calibrated to Modern Health Ecosystems</h2>
+      <p>Dr. Yash Khanvilkar delivers elite healthcare interventions from his specialized medical center in Baner, tracking intricate metabolic panels with rigorous clinical scrutiny. His framework eliminates surface-level diagnosis, targeting direct chemical indicators to handle complicated systemic dysfunctions with modern tools.</p>
+      <p>By coordinating advanced lipid management profiles, glucose curves, and detailed thyroid tracking scripts, his methodology brings complete clarity to diagnostic treatment patterns, ensuring long-term health stabilization for all patients.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="specialties" style="border-top: 1px solid rgba(194,157,88,0.12);">
+  <div class="section-header">
+    <span>Medical Expertise</span>
+    <h2>Specialized Operational Vectors</h2>
+  </div>
+  <div class="services-row">
+    <div class="specialty-focus-card">
+      <span class="specialty-icon">🩸</span>
+      <h3>Advanced Diabetology</h3>
+      <p>Continuous glucose balancing, precise insulin tracking, and specialized metabolic plans designed to prevent complex microvascular damage.</p>
+    </div>
+    <div class="specialty-focus-card">
+      <span class="specialty-icon">🦋</span>
+      <h3>Thyroid Optimization</h3>
+      <p>Targeted hormone regulation strategies to manage hypothyroidism, hyperthyroidism, and metabolic speed alterations efficiently.</p>
+    </div>
+    <div class="specialty-focus-card">
+      <span class="specialty-icon">🩺</span>
+      <h3>MD Internal Medicine</h3>
+      <p>Comprehensive care for complex acute illnesses, severe hypertension, multi-system pathology, and general system diagnostics.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews-wrapper" id="validation">
+  <div class="section-header" style="margin-bottom: 5.5rem;">
+    <span>Empirical Outcomes</span>
+    <h2>Verified Patient Case Feedback</h2>
+  </div>
+  <div class="review-grid">
+    <div class="review-item-node">
+      <div class="star-row">★★★★★</div>
+      <p class="review-quote">"Dr. Khanvilkar’s meticulous approach to my complex diabetes and thyroid logs completely transformed my energy metrics. A phenomenal physician in Pune."</p>
+      <p style="font-weight: 700; font-size: 0.95rem; color: var(--emerald-institutional); font-family: 'Outfit', sans-serif;">— Long-Term Patient, Baner</p>
+    </div>
+    <div class="review-item-node">
+      <div class="star-row">★★★★★</div>
+      <p class="review-quote">"His scientific approach to internal medicine diagnostics provides immense clarity. He tracks the numbers precisely and fixes systemic errors cleanly."</p>
+      <p style="font-weight: 700; font-size: 0.95rem; color: var(--emerald-institutional); font-family: 'Outfit', sans-serif;">— Healthcare Professional Case Review</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="booking" style="max-width: 100%; padding-left: 5%; padding-right: 5%;">
+  <div class="appointment-block" style="max-width: 1300px; margin: 0 auto;">
+    <div class="appointment-left">
+      <h2>Secure a <span>Priority Health Slot</span></h2>
+      <p style="color: #cbd5e1; font-size: 1.15rem; max-width: 480px; font-weight: 300;">Avoid generic booking queues. Route your consultation parameters directly to our local coordination deck in Baner.</p>
+      <div class="direct-hotline-badge">
+        <p style="font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; color: var(--gold-prestige); text-transform: uppercase; margin-bottom: 0.4rem; font-family: 'Outfit', sans-serif;">Direct Inbound Routing Line</p>
+        <p style="font-family: 'Outfit', sans-serif; font-size: 1.7rem; font-weight: 700; color: #ffffff;">075883 58076</p>
+      </div>
+    </div>
+    
+    <form class="booking-portal-form" onsubmit="event.preventDefault(); alert('Consultation parameters logged. Our clinical front desk in Baner will call you within standard hours to finalize your appointment time.');">
+      <div>
+        <label>Patient Full Name</label>
+        <input type="text" placeholder="e.g. Ramesh Deshmukh" required />
+      </div>
+      <div class="form-row-twin">
+        <div>
+          <label>Mobile Number</label>
+          <input type="tel" placeholder="e.g. +91 98765 43210" required />
+        </div>
+        <div>
+          <label>Target Clinical Area</label>
+          <select>
+            <option>Diabetes Assessment & Balance</option>
+            <option>Thyroid / Endocrine Profiling</option>
+            <option>MD General Medicine Review</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row-twin">
+        <div>
+          <label>Preferred Date</label>
+          <input type="date" required />
+        </div>
+        <div>
+          <label>Time Grid Allocation</label>
+          <select>
+            <option>Morning Consulting Slot</option>
+            <option>Evening Consulting Slot</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn-portal-submit">Submit Priority Request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo" style="color: #ffffff; margin-bottom: 1.8rem;">DR. YASH <span>KHANVILKAR</span></div>
+      <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; max-width: 340px;">Providing premium diabetes regulation paths, detailed thyroid optimization treatments, and complete internal diagnostic medicine protocols across Pune.</p>
+    </div>
+    <div class="footer-col">
+      <h4>System Architecture</h4>
+      <ul class="footer-links">
+        <li><a href="#philosophy">Clinical Practice Paradigm</a></li>
+        <li><a href="#specialties">Areas of Specialty</a></li>
+        <li><a href="#validation">Verified Patient Logs</a></li>
+        <li><a href="#booking">Secure Portal Inbound</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Clinic Terminal</h4>
+      <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">Baner, Pune, Maharashtra, India<br/>
+      <strong>Direct Hotline:</strong> <a href="tel:07588358076" style="color: var(--gold-prestige); text-decoration: none; font-weight: 700;">075883 58076</a></p>
+    </div>
+  </div>
+  <div style="max-width: 1300px; margin: 6rem auto 0; padding-top: 2rem; border-top: 1px solid #03231c; text-align: center; font-size: 0.8rem; color: var(--slate-muted);">
+    © 2026 Dr. Yash Khanvilkar. All rights reserved. Strategic Healthcare Interface Architecture.
+  </div>
+</footer>
+
+</body>
+</html>
